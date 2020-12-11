@@ -1,0 +1,463 @@
+/****************************************************** tag selectors ******************************************************/
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/****************************************************** class slectors ******************************************************/
+.Brand {
+  font-weight: bolder;
+  font-size: 1.4rem;
+  background: -webkit-linear-gradient(#ff414d, #3282b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#more {display: none;}
+/****************************** Navbar / navs ******************************/
+.Navigationbar {
+  padding: 0 5%;
+  background-color: #fff;
+}
+
+.nav-item {
+  padding-left: 10px;
+}
+
+/* Health nav */
+.health-navs {
+  padding: 0 3%;
+  color: #69B55A;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: green;
+}
+
+.health-navs:hover {
+  color: green;
+  background-color: #e8e8e8;
+}
+
+/****************************** h1 ******************************/
+.home-h1 {
+  font-size: 3rem;
+  color: #fff;
+  padding: 8% 25% 10%;
+  line-height: 1.5;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.health-h1 {
+  padding: 5% 0 3%;
+  font-weight: 400;
+  text-align: center;
+}
+
+.About-us-h1 {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-left: 18%;
+}
+
+/****************************** h2 ******************************/
+.review-h2 {
+  padding: 5% 0 0;
+}
+
+.About-us-main-h2 {
+  padding: 5% 10% 2%;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.Contact-us-h2 {
+  padding: 2% 0;
+}
+
+/****************************** h3 ******************************/
+.health-h3 {
+  font-weight: 900;
+  padding-top: 5%;
+}
+
+.health-more-h3 {
+  text-align: center;
+  font-weight: 900;
+  padding: 5% 17% 0;
+}
+
+.FAQs-h3 {
+  padding: 5% 0 1%;
+}
+
+.Contact-us-h3 {
+  padding-bottom: 1%;
+  padding-top: 0.5%;
+}
+
+/****************************** h4 ******************************/
+.reviews-h4 {
+  padding-top: 2%;
+}
+
+/****************************** h5 ******************************/
+.health-h5 {
+  font-weight: 900;
+}
+
+/****************************** h6 ******************************/
+.Contact-us-h6 {
+  opacity: 0.75;
+}
+
+/****************************** Paragraph ******************************/
+.home-paragraph {
+  color: #fff;
+  font-size: 1.2rem;
+  padding-top: 3.5%;
+}
+
+.health-paragraph {
+  opacity: 0.7;
+}
+
+.health-more-paragraph {
+  opacity: 0.7;
+  padding-right: 100px;
+}
+
+.review-paragraph {
+  padding: 2% 12% 3%;
+}
+
+.reviews-paragraph {
+  padding: 1% 20% 3%;
+}
+
+.About-us-main-paragraph {
+  font-size: 1.3rem;
+  opacity: 0.8;
+}
+
+.About-us-paragraph {
+  font-size: 1rem;
+  text-align: left;
+  opacity: 0.8;
+  padding: 0 10% 3% 18%;
+}
+
+.FAQs-paragraph {
+  padding: 0 20% 1%;
+  opacity: 0.8;
+  font-size: 0.8rem;
+}
+
+.FAQs-prargraphs {
+  text-align: left;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  padding: 0 2%;
+  color: #000;
+}
+
+.Contact-us-paragraph {
+  line-height: 0.5;
+  opacity: 0.9;
+  font-size: 0.8rem;
+}
+
+.footer-paragraph {
+  opacity: 0.75;
+}
+
+/****************************** Images ******************************/
+.health-background {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 320px;
+  border-radius: 20%;
+  margin-left: 6%;
+  margin-top: 12%;
+}
+
+.reviews-img {
+  width: 150px;
+  border-radius: 100px;
+}
+
+.my-pic {
+  width: 120px;
+  border-radius: 50%;
+
+}
+
+/****************************** Buttons & Icons ******************************/
+/* Return-top button */
+.Return-top {
+  position: fixed;
+  border: none;
+  background-color: transparent;
+  z-index: 99;
+  bottom: 30px;
+  right: 30px;
+}
+
+.arrow-up {
+  color: #3797a4;
+}
+
+.arrow-up:hover {
+  color: #1f6f8b;
+}
+
+/* Home Buttons & Icons */
+.btn1 {
+  display: inline-block;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-right: 2%;
+  font-family: sans-serif;
+}
+
+.btn2 {
+  display: inline-block;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: sans-serif;
+}
+
+.btn3 {
+  display: block;
+  padding-left: 6%;
+  padding-right: 6%;
+  margin: 1.5% auto 3%;
+  font-family: sans-serif;
+}
+
+.home-icon {
+  margin-right: 7px;
+}
+
+/* Health Icon */
+.health-icon {
+  padding: 0 6px;
+}
+
+.health-btn {
+  background: #ffa62b;
+  color: #fff;
+}
+
+.health-btn:hover, .health-more-btn:hover {
+  background-color: #f6830f;
+  color: #fff;
+}
+
+.health-more-btn {
+  background: #ffa62b;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.health-more-icon {
+  padding-right: 2%;
+  opacity: 0.7;
+}
+
+/* About Us Icons */
+.about-us-icon {
+  position: absolute;
+  margin-left: -7%;
+}
+
+/* FAQs Button */
+.FAQs-btn {
+  margin-top: 30px;
+}
+
+.contact-us-inside-btn {
+  font-size: 0.95rem;
+}
+
+.facebook {
+  color: #1195f5;
+  padding: 0 5%;
+}
+.twitter {
+  color: #50abf1;
+  padding: 0 5%;
+}
+.instagram {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0 5%;
+}
+.whatsapp {
+  color: #0dc143;
+  padding: 0 5%;
+}
+
+/****************************** Hr ******************************/
+.About-us-hr {
+  border: 10px;
+  border-top-style: dotted;
+  border-color: #0278ae;
+  width: 10%;
+  margin: 2% auto 4%;
+}
+
+.footer-hr {
+  margin: 0;
+  border: 1px solid;
+  border-color: #aaaaaa;
+}
+
+.footer-link {
+  color: #000;
+  font-size: 0.9rem;
+  padding-right: 2%;
+  opacity: 0.75;
+}
+
+.footer-link:hover {
+  color: #000;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+/****************************** Cotainer ******************************/
+.container-health {
+  padding: 3% 6% 0;
+}
+
+.health-more-container {
+  padding: 5% 0 0 12%;
+}
+
+.footer-container {
+  padding: 1.5% 0 2% 16%;
+}
+
+.FAQs-container {
+  padding: 0 25%;
+}
+
+.Contact-us-div {
+  display: inline-block;
+  padding: 2% 0 2.5% 3%;
+}
+
+.Social-media {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 140px;
+  height: 24px;
+  margin: 0 auto;
+
+}
+
+/* Bootstrap classes edit */
+.carousel-indicators {
+  margin: 0;
+}
+
+.FAQs-text, .FAQs-text:focus {
+  color: #000;
+  text-decoration: none;
+  box-shadow: 0 0 0 0.2rem rgb(247 247 247);
+}
+
+.FAQs-text:hover {
+  color: #000;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+/****************************************************** id selectors ******************************************************/
+/****************************** Home ******************************/
+#Home {
+  background: url("../Images/father&daughter.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 750px;
+  text-align: center;
+}
+
+/****************************** Health ******************************/
+#Health {
+  background-color: #fff;
+  color: #000;
+  height: 750px;
+  text-align: left;
+}
+
+/****************************** Reviews ******************************/
+#Reviews {
+  background-color: #ffc93c;
+  color: #fff;
+  height: 650px;
+  text-align: center;
+}
+
+/****************************** About - us ******************************/
+#About-us {
+  background-color: #fff;
+  color: #000;
+  height: 750px;
+  text-align: center;
+}
+
+/****************************** FAQs ******************************/
+#FAQs {
+  background-color: #aee6e6;
+  color: #fff;
+  height: 650px;
+  text-align: center;
+}
+
+/****************************** Contact-us ******************************/
+#Contact-us {
+  background-color: #e8e8e8;
+  color: #000;
+  text-align: center;
+  height: 515px;
+}
+
+/****************************** Footer ******************************/
+#Footer {
+  height: 100px;
+}
+
+/****************************** Media ******************************/
+@media (max-width: 990px) {
+  #Home {
+    height: 840px;
+  }
+  .home-h1 {
+  padding-bottom: 15%;
+}
+  #Health {
+    height: 1000px;
+  }
+
+  #FAQs {
+    height: 700px;
+  }
+
+  #About-us {
+    height: 1150px;
+  }
+
+  .health-background {
+    margin-top: 5%;
+  }
+}
