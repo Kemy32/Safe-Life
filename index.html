@@ -7,7 +7,7 @@
 
   <!-- Css-stylesheet / Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" href="CSS/Style.css">
+  <link rel="stylesheet" href="CSS/Style1.css">
 
 
   <!-- Bootstrap scripts/jquery -->
@@ -30,9 +30,9 @@
 <body>
 
   <section id="Home">
-    <nav class="navbar navbar-expand-lg navbar-light  Navigationbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent Navigationbar">
       <a class="navbar-brand h1">
-        <img src="Images/Favicon/heart-beat.png" alt="">
+        <a href="#"onclick="location.reload()"><img class="brand-img" src="Images/Favicon/heart-beat.png" alt=""></a>
         <span class="Brand">Safe Life</span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,7 +67,6 @@
     <button class="Return-top" type="button" name="button"><a href="#Home"><i class="fas fa-arrow-alt-circle-up fa-2x arrow-up"></i></a></button>
 
     <div class="container-fluid">
-
       <p class="home-paragraph">Join 50 million members worldwide protected by Safe-life</p>
       <h1 class="home-h1">International Health insurance for who u care of</h1>
 
@@ -101,11 +100,11 @@
               <h3 class="health-h3">Medicare</h3>
               <p class="health-paragraph">Do you qualify for Medicare? You might have Medicare plan options beyond the federal program, Original Medicare (Part A and Part B). Find out about Medicare Advantage plans, Medicare Prescription Drug Plans,
                 and Medicare Supplement plans.
-                <br><br>If you decide to stay with Original Medicare, you might be able to sign up for a Medicare Supplement (Medigap) plan to help pay for Original Medicare's out-of-pocket costs. Different Medigap plans pay for different amounts of
+                <span><br><br>If you decide to stay with Original Medicare, you might be able to sign up for a Medicare Supplement (Medigap) plan to help pay for Original Medicare's out-of-pocket costs. Different Medigap plans pay for different amounts of
                 those costs, such as copayments, coinsurance, and deductibles. All plans cover Medicare Part A hospital coinsurance costs at 100%. Beyond this one benefit, the plans vary on what they cover with some plans being more comprehensive
-                than others. Medicare Supplement plans today don't cover prescription drugs, and you can't use them with Medicare Advantage plans.</p>
-              <button class="btn btn-md health-btn" type="button" name="button">Find Medicare Plans</button>
-              <button class="btn btn-md btn-outline-success" type="button" name="button">Read More</button>
+                than others. Medicare Supplement plans today don't cover prescription drugs, and you can't use them with Medicare Advantage plans.</span></p>
+              <button class="btn btn-md health-btn" type="button" name="button">Find Medicare Plan</button>
+              <button class="btn btn-md btn-outline-success" type="button" name="button" onclick="Read(event)">Read More</button>
             </div>
             <div class="col col-lg-6 col-md-12">
               <img class="health-background img-responsive" src="Images/medicare.jpg" alt="">
@@ -122,9 +121,9 @@
               <p class="health-paragraph">Individual and family health insurance plans can help cover expenses in the case of serious medical emergencies, and help you and your family stay on top of preventative health-care services. Having health
                 insurance coverage can save you money on doctor's visits, prescriptions drugs, preventative care and other health-care services. Typical health insurance plans for individuals include costs such as a monthly premium, annual
                 deductible, copayments, and coinsurance.
-                <br><br> The cost of your health insurance plan could be affected by age and tobacco use, but you will not be declined for an individual health insurance plan due to pre-existing conditions. </p>
-              <button class="btn btn-md health-btn" type="button" name="button">Find Health Insurance Plans</button>
-              <button class="btn btn-md btn-outline-success" type="button" name="button">Read More</button>
+                <span><br><br> The cost of your health insurance plan could be affected by age and tobacco use, but you will not be declined for an individual health insurance plan due to pre-existing conditions.</span></p>
+              <button class="btn btn-md health-btn" type="button" name="button">Find Health Insurance Plan</button>
+              <button class="btn btn-md btn-outline-success" type="button" name="button" onclick="Read(event)">Read More</button>
             </div>
             <div class="col col-lg-6 col-md-12">
               <img class="health-background img-responsive" src="Images/Family.jpg" alt="">
@@ -140,10 +139,10 @@
               <h3 class="health-h3">Health Insurance for Small Businesses</h3>
               <p class="health-paragraph">Providing health insurance as a small business is a great way to hire and retain excellent employees. The Affordable Care Act currently requires small businesses to offer health insurance, if they have 50 or
                 more full-time workers. If certain small businesses fail to provide health insurance to employees, they may be subject to fines.
-                <br><br>With group health insurance plans, premium costs are typically shared between employer and employees who chose to be covered under the health insurance plan. Tax incentives meant for small businesses may be available to you if
-                you offer group health insurance to your employees. </p>
-              <button class="btn btn-md health-btn" type="button" name="button">Find Small Businesses Plans</button>
-              <button class="btn btn-md btn-outline-success" type="button" name="button">Read More</button>
+                <span><br><br>With group health insurance plans, premium costs are typically shared between employer and employees who chose to be covered under the health insurance plan. Tax incentives meant for small businesses may be available to you if
+                you offer group health insurance to your employees.</span></p>
+              <button class="btn btn-md health-btn" type="button" name="button">Find Small Businesses Plan</button>
+              <button class="btn btn-md btn-outline-success" type="button" name="button" onclick="Read(event)">Read More</button>
             </div>
             <div class="col col-lg-6 col-md-12">
               <img class="health-background img-responsive" src="Images/work-mates.jpg" alt="">
@@ -158,10 +157,10 @@
               <h3 class="health-h3">Short-Term Health Insurance</h3>
               <p class="health-paragraph">Short-term plans are a great way to cover yourself with temporary health insurance. If you have a gap in health insurance coverage, short-term plans offer limited coverage at affordable prices.
                 <br><br>This flexible health insurance option can offer you coverage for any period between 30 days and 12 months, depending on the short-term health insurance plan, and the where you live.
-                <br><br>Short-term health insurance plans do not satisfy the requirements of the ACA, & they do take pre-existing conditions into account for new applicants. The type of services covered with this health insurance are usually
-                limited to major medical emergencies, such as serious illness or injury. Preventative care is usually not included in short-term health insurance plans. </p>
-              <button class="btn btn-md health-btn" type="button" name="button">Find Short-Term Health Insurance Plans</button>
-              <button class="btn btn-md btn-outline-success" type="button" name="button">Read More</button>
+                <span><br><br>Short-term health insurance plans do not satisfy the requirements of the ACA, & they do take pre-existing conditions into account for new applicants. The type of services covered with this health insurance are usually
+                limited to major medical emergencies, such as serious illness or injury. Preventative care is usually not included in short-term health insurance plans.</span></p>
+              <button class="btn btn-md health-btn" type="button" name="button">Find Short-Term Health Insurance Plan</button>
+              <button class="btn btn-md btn-outline-success" type="button" name="button" onclick="Read(event)">Read More</button>
             </div>
             <div class="col col-lg-6 col-md-12">
               <img class="health-background img-responsive" src="Images/meeting.jpg" alt="">
@@ -176,22 +175,22 @@
             <div class="col col-lg-6 col-md-12">
               <h5 class="health-h5"><i class="fas fa-tooth health-more-icon"></i>Dental Insurance</h5>
               <p class="health-more-paragraph">Dental insurance plans usually cover basic and preventive dental care, such as checkups</p>
-              <button class="btn btn-md health-more-btn" type="button" name="button">Find Dental Plans</button>
+              <button class="btn btn-md health-more-btn" type="button" name="button">Find Dental Plan</button>
             </div>
             <div class="col col-lg-6 col-md-12">
               <h5 class="health-h5"><i class="far fa-eye health-more-icon"></i>Vision Insurance</h5>
               <p class="health-more-paragraph">Vision insurance plans may cover checkups and help pay the costs of glasses or contact lenses</p>
-              <button class="btn btn-md health-more-btn" type="button" name="button">Find Vision Plans</button>
+              <button class="btn btn-md health-more-btn" type="button" name="button">Find Vision Plan</button>
             </div>
             <div class="col col-lg-6 col-md-12">
               <h5 class="health-h5"><i class="fas fa-puzzle-piece health-more-icon"></i>GAP Insurance</h5>
               <p class="health-more-paragraph">GAP coverage is supplemental insurance for your major medical insurance plan, and could provide a cash payout</p>
-              <button class="btn btn-md health-more-btn" type="button" name="button">Find GAP Plans</button>
+              <button class="btn btn-md health-more-btn" type="button" name="button">Find GAP Plan</button>
             </div>
             <div class="col col-lg-6 col-md-12">
               <h5 class="health-h5"><i class="fas fa-user-injured health-more-icon"></i>Medical Indemnity Insurance</h5>
               <p class="health-more-paragraph">Get affordable health insurance plans with set benefits and no deductible to meet</p>
-              <button class="btn btn-md health-more-btn" type="button" name="button">Find Medical Indemnity Insurance Plans</button>
+              <button class="btn btn-md health-more-btn" type="button" name="button">Find Medical Indemnity Insurance Plan</button>
             </div>
           </div>
         </div>
@@ -289,7 +288,7 @@
   </section>
 
   <section id="FAQs">
-    <h3 class="FAQs-h3">FAQs</h3>
+    <h2 class="FAQs-h2">FAQs</h2>
     <p class="FAQs-paragraph">We know you might want more information about international health insurance, so we've put together a list of our most commonly-asked questions right here.</p>
 
     <div class="accordion FAQs-container" id="accordionExample">
@@ -363,32 +362,32 @@
 
   <section id="Contact-us">
     <h2 class="Contact-us-h2">Let's talk</h2>
-    <img class="my-pic" src="Images/Me.jpg" alt="Karim's picture">
+    <img class="my-pic" src="Images/Karim.jpg" alt="Karim's picture">
     <h3 class="Contact-us-h3">Karim Sherif</h3>
     <p class="Contact-us-paragraph">The Operations Assistant Manager at Safe-Life Insurance Company - Egypt.</p>
-    <p class="Contact-us-paragraph">If you have a question, would like to learn more, or if you just want to chat through your options, Karim would be delighted to help.</p>
+    <p class="Contact-us-paragraph">If you have a question, would like to learn more, or if you just want to chat through your options, KARIM would be delighted to help.</p>
 
     <div class="Contact-us-div">
       <h6 class="Contact-us-h6">Contact us by Email</h6>
-      <button class="btn btn-md btn-primary" type="button" name="button"><span class="contact-us-inside-btn">EMAIL KARIM</span></button>
+      <button class="btn btn-md contact-btn1" type="button" name="button"><span class="contact-us-inside-btn">EMAIL KARIM</span></button>
     </div>
 
     <div class="Contact-us-div">
       <h6 class="Contact-us-h6">Make a call</h6>
-      <button class="btn btn-md btn-primary" type="button" name="button"><span class="contact-us-inside-btn">CALL KARIM +20123456789</span></button>
+      <button class="btn btn-md contact-btn2" type="button" name="button"><span class="contact-us-inside-btn">CALL KARIM +20123456789</span></button>
     </div>
 
     <div class="Contact-us-div">
-      <h6 class="Contact-us-h6">Apply for a cover today</h6>
-      <button class="btn btn-md btn-primary" type="button" name="button"><span class="contact-us-inside-btn">DOWNLOAD APPLICATION</span></button>
+      <h6 class="Contact-us-h6">View your cover today</h6>
+      <button class="btn btn-md contact-btn3" type="button" name="button"><span class="contact-us-inside-btn">DOWNLOAD APPLICATION</span></button>
     </div>
 
     <div class="Social-media">
       <span class="Social-media-hr"></span>
-      <i class="fab fa-facebook facebook"></i>
-      <i class="fab fa-twitter twitter"></i>
-      <i class="fab fa-instagram instagram"></i>
-      <i class="fab fa-whatsapp whatsapp"></i>
+      <a href="#"><i class="fab fa-facebook facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp whatsapp"></i></a>
       <span class="Social-media-hr"></span>
     </div>
 
@@ -406,11 +405,8 @@
       <a class="footer-link" href="#">Complaints Procedure</a>
     </div>
   </section>
-  <!-- <script type="text/javascript">
-    document.onscroll = () => {
-      console.log(document.scrollTop);
-    };
-  </script> -->
-</body>
 
+  <script src="./JavaScript/Script.js">
+  </script>
+</body>
 </html>
