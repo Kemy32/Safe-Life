@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <title>Safe Life</title>
@@ -14,7 +13,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-
   <!-- Favicon -->
   <link rel="icon" href="Images/Favicon/heart-beat.png">
 
@@ -25,14 +23,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
+  <!-- My Java Script (Database) -->
+  <script src="./Javascript/database.js"></script>
 </head>
 
 <body>
-
+<div id="blur">
   <section id="Home">
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent Navigationbar">
-      <a class="navbar-brand h1">
-        <a href="#"onclick="location.reload()"><img class="brand-img" src="Images/Favicon/heart-beat.png" alt=""></a>
+      <a class="navbar-brand">
+        <a href="#" onclick="location.reload()"><img class="brand-img" src="Images/Favicon/heart-beat.png" alt=""></a>
         <span class="Brand">Safe Life</span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,11 +43,9 @@
           <li class="nav-item active">
             <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
           </li>
-
           <li class="nav-item ">
             <a class="nav-link" href="#Health">Health</a>
           </li>
-
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               About
@@ -64,18 +62,18 @@
         </ul>
       </div>
     </nav>
-    <button class="Return-top" type="button" name="button"><a href="#Home"><i class="fas fa-arrow-alt-circle-up fa-2x arrow-up"></i></a></button>
+    <button class="return-top" id="returnTop" onclick="topFunction()" type="button" name="button"><i class="fas fa-arrow-alt-circle-up fa-2x arrow-up" id="arrowUp"></i></button>
 
     <div class="container-fluid">
       <p class="home-paragraph">Join 50 million members worldwide protected by Safe-life</p>
       <h1 class="home-h1">International Health insurance for who u care of</h1>
 
-      <button type="button" class="btn btn-lg btn-success btn1" name="button"><i class="fas fa-arrow-right 2x home-icon"></i> Online quotes</button>
-      <button type="button" class="btn btn-lg btn-primary btn2" name="button"><i class="fas fa-comment-dots 2x home-icon"></i> Online chat</button>
-      <button type="button" class="btn btn-lg btn-primary btn3" name="button"><i class="fas fa-phone-alt 2x home-icon"></i> Request a call back</button>
+      <button type="button" class="btn btn-lg btn-success btn1" name="button" onclick="window.location.href='index2.html'"><i class="fas fa-arrow-right 2x home-icon"></i>Online quote</button>
+      <button type="button" class="btn btn-lg btn-primary btn2" name="button" onclick="undermaintenance1()"><i class="fas fa-comment-dots 2x home-icon"></i> Online chat</button>
+      <button type="button" class="btn btn-lg btn-primary btn3" name="button" onclick="undermaintenance2()"><i class="fas fa-phone-alt 2x home-icon"></i> Request a call back</button>
     </div>
-
   </section>
+
   <section id="Health">
     <h1 class="health-h1">Health insurance plans for everyone</h1>
 
@@ -93,17 +91,18 @@
 
     <div class="tab-content" id="nav-tabContent">
 
-      <div class="tab-pane fade show active " id="nav-medicare" role="tabpanel" aria-labelledby="nav-medicare-tab">
+      <div class="tab-pane fade show active" id="nav-medicare" role="tabpanel" aria-labelledby="nav-medicare-tab">
         <div class="container-health">
           <div class="row">
             <div class="col col-lg-6 col-md-12">
               <h3 class="health-h3">Medicare</h3>
               <p class="health-paragraph">Do you qualify for Medicare? You might have Medicare plan options beyond the federal program, Original Medicare (Part A and Part B). Find out about Medicare Advantage plans, Medicare Prescription Drug Plans,
                 and Medicare Supplement plans.
-                <span><br><br>If you decide to stay with Original Medicare, you might be able to sign up for a Medicare Supplement (Medigap) plan to help pay for Original Medicare's out-of-pocket costs. Different Medigap plans pay for different amounts of
-                those costs, such as copayments, coinsurance, and deductibles. All plans cover Medicare Part A hospital coinsurance costs at 100%. Beyond this one benefit, the plans vary on what they cover with some plans being more comprehensive
-                than others. Medicare Supplement plans today don't cover prescription drugs, and you can't use them with Medicare Advantage plans.</span></p>
-              <button class="btn btn-md health-btn" type="button" name="button">Find Medicare Plan</button>
+                <span><br><br>If you decide to stay with Original Medicare, you might be able to sign up for a Medicare Supplement (Medigap) plan to help pay for Original Medicare's out-of-pocket costs. Different Medigap plans pay for different
+                  amounts of
+                  those costs, such as copayments, coinsurance, and deductibles. All plans cover Medicare Part A hospital coinsurance costs at 100%. Beyond this one benefit, the plans vary on what they cover with some plans being more comprehensive
+                  than others. Medicare Supplement plans today don't cover prescription drugs, and you can't use them with Medicare Advantage plans.</span></p>
+              <button class="btn btn-md health-btn" type="button" name="button" onclick="window.location.href='index2.html'">Get Medicare Plan</button>
               <button class="btn btn-md btn-outline-success" type="button" name="button" onclick="Read(event)">Read More</button>
             </div>
             <div class="col col-lg-6 col-md-12">
@@ -122,7 +121,7 @@
                 insurance coverage can save you money on doctor's visits, prescriptions drugs, preventative care and other health-care services. Typical health insurance plans for individuals include costs such as a monthly premium, annual
                 deductible, copayments, and coinsurance.
                 <span><br><br> The cost of your health insurance plan could be affected by age and tobacco use, but you will not be declined for an individual health insurance plan due to pre-existing conditions.</span></p>
-              <button class="btn btn-md health-btn" type="button" name="button">Find Health Insurance Plan</button>
+              <button class="btn btn-md health-btn" type="button" name="button" onclick="window.location.href='index2.html'">Get Health Insurance Plan</button>
               <button class="btn btn-md btn-outline-success" type="button" name="button" onclick="Read(event)">Read More</button>
             </div>
             <div class="col col-lg-6 col-md-12">
@@ -139,9 +138,10 @@
               <h3 class="health-h3">Health Insurance for Small Businesses</h3>
               <p class="health-paragraph">Providing health insurance as a small business is a great way to hire and retain excellent employees. The Affordable Care Act currently requires small businesses to offer health insurance, if they have 50 or
                 more full-time workers. If certain small businesses fail to provide health insurance to employees, they may be subject to fines.
-                <span><br><br>With group health insurance plans, premium costs are typically shared between employer and employees who chose to be covered under the health insurance plan. Tax incentives meant for small businesses may be available to you if
-                you offer group health insurance to your employees.</span></p>
-              <button class="btn btn-md health-btn" type="button" name="button">Find Small Businesses Plan</button>
+                <span><br><br>With group health insurance plans, premium costs are typically shared between employer and employees who chose to be covered under the health insurance plan. Tax incentives meant for small businesses may be available to
+                  you if
+                  you offer group health insurance to your employees.</span></p>
+              <button class="btn btn-md health-btn" type="button" name="button" onclick="window.location.href='index2.html'">Get Small Businesses Plan</button>
               <button class="btn btn-md btn-outline-success" type="button" name="button" onclick="Read(event)">Read More</button>
             </div>
             <div class="col col-lg-6 col-md-12">
@@ -158,8 +158,8 @@
               <p class="health-paragraph">Short-term plans are a great way to cover yourself with temporary health insurance. If you have a gap in health insurance coverage, short-term plans offer limited coverage at affordable prices.
                 <br><br>This flexible health insurance option can offer you coverage for any period between 30 days and 12 months, depending on the short-term health insurance plan, and the where you live.
                 <span><br><br>Short-term health insurance plans do not satisfy the requirements of the ACA, & they do take pre-existing conditions into account for new applicants. The type of services covered with this health insurance are usually
-                limited to major medical emergencies, such as serious illness or injury. Preventative care is usually not included in short-term health insurance plans.</span></p>
-              <button class="btn btn-md health-btn" type="button" name="button">Find Short-Term Health Insurance Plan</button>
+                  limited to major medical emergencies, such as serious illness or injury. Preventative care is usually not included in short-term health insurance plans.</span></p>
+              <button class="btn btn-md health-btn" type="button" name="button" onclick="window.location.href='index2.html'">Get Short-Term Health Insurance Plan</button>
               <button class="btn btn-md btn-outline-success" type="button" name="button" onclick="Read(event)">Read More</button>
             </div>
             <div class="col col-lg-6 col-md-12">
@@ -175,22 +175,22 @@
             <div class="col col-lg-6 col-md-12">
               <h5 class="health-h5"><i class="fas fa-tooth health-more-icon"></i>Dental Insurance</h5>
               <p class="health-more-paragraph">Dental insurance plans usually cover basic and preventive dental care, such as checkups</p>
-              <button class="btn btn-md health-more-btn" type="button" name="button">Find Dental Plan</button>
+              <button class="btn btn-md health-more-btn" type="button" name="button" onclick="window.location.href='index2.html'">Get Dental Plan</button>
             </div>
             <div class="col col-lg-6 col-md-12">
               <h5 class="health-h5"><i class="far fa-eye health-more-icon"></i>Vision Insurance</h5>
               <p class="health-more-paragraph">Vision insurance plans may cover checkups and help pay the costs of glasses or contact lenses</p>
-              <button class="btn btn-md health-more-btn" type="button" name="button">Find Vision Plan</button>
+              <button class="btn btn-md health-more-btn" type="button" name="button" onclick="window.location.href='index2.html'">Get Vision Plan</button>
             </div>
             <div class="col col-lg-6 col-md-12">
               <h5 class="health-h5"><i class="fas fa-puzzle-piece health-more-icon"></i>GAP Insurance</h5>
               <p class="health-more-paragraph">GAP coverage is supplemental insurance for your major medical insurance plan, and could provide a cash payout</p>
-              <button class="btn btn-md health-more-btn" type="button" name="button">Find GAP Plan</button>
+              <button class="btn btn-md health-more-btn" type="button" name="button" onclick="window.location.href='index2.html'">Get GAP Plan</button>
             </div>
             <div class="col col-lg-6 col-md-12">
               <h5 class="health-h5"><i class="fas fa-user-injured health-more-icon"></i>Medical Indemnity Insurance</h5>
               <p class="health-more-paragraph">Get affordable health insurance plans with set benefits and no deductible to meet</p>
-              <button class="btn btn-md health-more-btn" type="button" name="button">Find Medical Indemnity Insurance Plan</button>
+              <button class="btn btn-md health-more-btn" type="button" name="button" onclick="window.location.href='index2.html'">Get Medical Indemnity Insurance Plan</button>
             </div>
           </div>
         </div>
@@ -357,7 +357,6 @@
         </div>
       </div>
     </div>
-    <button class="btn btn-md btn-primary FAQs-btn" type="button" name="button">More</button>
   </section>
 
   <section id="Contact-us">
@@ -369,17 +368,17 @@
 
     <div class="Contact-us-div">
       <h6 class="Contact-us-h6">Contact us by Email</h6>
-      <button class="btn btn-md contact-btn1" type="button" name="button"><span class="contact-us-inside-btn">EMAIL KARIM</span></button>
+      <button class="btn btn-md contact-btn1" id="EmailMeBtn" type="button" name="button"><span class="contact-us-inside-btn">EMAIL KARIM</span></button>
     </div>
 
     <div class="Contact-us-div">
       <h6 class="Contact-us-h6">Make a call</h6>
-      <button class="btn btn-md contact-btn2" type="button" name="button"><span class="contact-us-inside-btn">CALL KARIM +20123456789</span></button>
+      <button class="btn btn-md contact-btn2" type="button" name="button" onclick="call()"><span class="contact-us-inside-btn">CALL KARIM +20123456789</span></button>
     </div>
 
     <div class="Contact-us-div">
       <h6 class="Contact-us-h6">View your cover today</h6>
-      <button class="btn btn-md contact-btn3" type="button" name="button"><span class="contact-us-inside-btn">DOWNLOAD APPLICATION</span></button>
+      <button onclick="downloadApplication()" class="btn btn-md contact-btn3" type="button" name="button"><span class="contact-us-inside-btn">DOWNLOAD APPLICATION</span></button>
     </div>
 
     <div class="Social-media">
@@ -390,7 +389,6 @@
       <a href="#"><i class="fab fa-whatsapp whatsapp"></i></a>
       <span class="Social-media-hr"></span>
     </div>
-
   </section>
 
   <section id="Footer">
@@ -405,8 +403,31 @@
       <a class="footer-link" href="#">Complaints Procedure</a>
     </div>
   </section>
+</div>
 
-  <script src="./JavaScript/Script.js">
-  </script>
+  <div class="Email-popup" id="EmailPopup">
+      <div class="Content-body">
+          <div class="inner-body">
+            <span class="CloseBtn"><i class="fas fa-times-circle"></i></span>
+            <h4>Email Karim</h4>
+            <form class="mail-to" action="mailto:karimsherif500@gmail.com" method="post" enctype="text/plain">
+              <label class="full-name" for="Full-Name">Full-Name:</label>
+              <input class="full-name1" size="30" type="text" name="Full-Name ">
+              <br>
+              <label class="email" for="Email">Email:</label>
+              <input class="email1" size="30" type="email" name="Email ">
+              <br>
+              <label class="comment" for="Comment">Comment:</label><br>
+              <textarea class="comment1" name="Comment " rows="7" cols="45"></textarea>
+              <br>
+              <input class="btn btn-md btn-primary" type="submit">
+              <input class="btn btn-md btn-outline-danger" type="reset" name="Reset">
+            </form>
+          </div>
+        </div>
+      </div>
+
+<script src="./JavaScript/Script.js"></script>
+
 </body>
 </html>
