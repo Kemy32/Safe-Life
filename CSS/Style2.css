@@ -1,0 +1,200 @@
+body {
+  background-color: #e7e7de;
+  background-image: url("../Images/formBG.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form-body {
+  background-color: #fff;
+  border: 1px solid grey;
+  border-radius: 5%;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  width: 600px;
+  height: 600px;
+  margin: 1% 2% 0.5% 7%;
+  display: inline-block;
+}
+
+.form {
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+#Form .loading {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+#Form.form-loading .form {
+  display: none;
+}
+
+#Form.form-loading .loading {
+  display: flex;
+}
+
+/*************************************************************************************/
+.id {
+  margin-left: 43%;
+}
+
+.password {
+  margin-left: 38%;
+}
+
+.id1 {
+  margin-left: 9%;
+  width: 145px;
+}
+
+.password1 {
+  width: 145px;
+}
+
+.id-output {
+  display: inline-flex;
+  border: 1px solid red;
+  border-radius: 5px;
+  width: 30px;
+  height: 25px;
+  margin-left: 55px;
+  margin-bottom: -5px;
+  padding-left: 5px;
+}
+
+.password-output {
+  display: inline-flex;
+  border: 1px solid red;
+  border-radius: 5px;
+  width: 60px;
+  height: 25px;
+  margin-bottom: -5px;
+  padding-left: 5px;
+}
+
+.fname {
+  margin-top: 15px;
+  margin-right: 34%;
+}
+
+.fname1 {
+  margin-right: 8%;
+  padding-right: 7%;
+}
+
+.lname1 {
+  padding-right: 7%;
+}
+
+.birth {
+  margin-top: 15px;
+  margin-right: 28%;
+}
+
+.birth1 {
+  margin-right: 18%;
+  width: 169px;
+  ;
+  max-width: 169px;
+}
+
+.male {
+  color: #029ef6;
+}
+
+.female {
+  color: #e547a1;
+}
+
+.femaleCheck {
+  filter: hue-rotate(90deg)
+}
+
+.email {
+  margin-top: 15px;
+  margin-right: 26%;
+}
+
+.email1 {
+  margin-right: 8%;
+  padding-right: 7%;
+}
+
+.phone1 {
+  padding-right: 7%;
+}
+
+.country {
+  margin-top: 15px;
+  margin-right: 18%;
+}
+
+.country1 {
+  margin-right: 8%;
+  padding-right: 7%;
+}
+
+.zip1 {
+  padding-right: 7%;
+}
+
+.quote-type {
+  margin-left: 7%;
+}
+
+.click-me {
+  display: inline-block;
+  margin-right: 30px;
+  float: right;
+}
+
+.submit-btn {
+  padding: 6px 0px;
+  width: 100px;
+}
+
+.fname1:focus, .lname1:focus, .birth1:focus, .email1:focus, .phone1:focus, .country1:focus, .zip1:focus {
+  outline: none !important;
+  border: 2px solid #007bff;
+}
+
+.title:focus, .quote-type:focus {
+  outline: none !important;
+  border: 1px solid #007bff;
+}
+
+.contents-h2 {
+  padding-bottom: 2%;
+  font-family: 'Dancing Script', cursive;
+font-size: 2.3rem;
+}
+
+.contents-p {
+  line-height: 0.5;
+}
+
+#form {
+  display: inline-block;
+}
+
+#Contents {
+  position: absolute;
+  height: 150px;
+  width: 600px;
+  top: 38%;
+  right: 3%;
+  color: #fff;
+  text-align: center;
+}

@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5 {
 .Brand {
   font-weight: bolder;
   font-size: 1.4rem;
+  padding-left: 5px;
   background: linear-gradient(170deg, #ff414d, #3282b8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -25,14 +26,18 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-#more {
-  display: none;
+.quote-a {
+  color: white;
+}
+
+.quote-a:hover {
+  text-decoration: none;
+  color: white;
 }
 
 /****************************** Navbar / navs ******************************/
 .Navigationbar {
   padding: 0 5%;
-  background-color: #fff;
 }
 
 .nav-item {
@@ -230,9 +235,11 @@ h1, h2, h3, h4, h5 {
 
 /****************************** Buttons & Icons ******************************/
 /* Return-top button */
-.Return-top {
+.return-top {
+  display: none;
   position: fixed;
-  border: none;
+  border: 0;
+  outline: none !important;
   background-color: transparent;
   z-index: 99;
   bottom: 30px;
@@ -240,11 +247,11 @@ h1, h2, h3, h4, h5 {
 }
 
 .arrow-up {
-  color: #393e46;
+  color: #cdd0cb;
 }
 
 .arrow-up:hover {
-  color: #222831;
+  color: #5f6769;
 }
 
 /* Home Buttons & Icons */
@@ -411,7 +418,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .health-more-container {
-  padding: 5% 0 0 10%;
+  padding: 5% 2% 0 10%;
 }
 
 .footer-container {
@@ -452,6 +459,74 @@ h1, h2, h3, h4, h5 {
   opacity: 0.9;
 }
 
+/************** Email *************/
+#blur {
+  /* filter: blur(2px); */
+}
+.Email-popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  overflow: auto;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.Content-body .inner-body {
+  padding: 4% 0 5% 5%;
+}
+
+.Content-body {
+  position: relative;
+  text-align: left;
+  margin: 6% auto;
+  background: #fff;
+  opacity: 1;
+  border: 1px solid grey;
+  border-radius: 10px;
+  width: 450px;
+  height: 400px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+@keyframes animatetop {
+  from {top:-100px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+
+.email1 {
+  margin-left: 35px;
+}
+
+.CloseBtn {
+  color: #007bff;
+  display: inline-block;
+  float: right;
+  opacity: 0.8;
+  margin-top: -3%;
+  margin-right: 3%;
+}
+
+.CloseBtn:hover,
+.CloseBtn:focus {
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
 /****************************************************** id selectors ******************************************************/
 /****************************** Home ******************************/
 #Home {
@@ -462,7 +537,6 @@ h1, h2, h3, h4, h5 {
   height: 750px;
   text-align: center;
 }
-
 /****************************** Health ******************************/
 #Health {
   background-color: #fff;
@@ -508,7 +582,7 @@ h1, h2, h3, h4, h5 {
   height: 100px;
 }
 
-/****************************** Media ******************************/
+/****************************************************** Media ******************************************************/
 @media (max-width: 990px) {
   #Home {
     height: 840px;
@@ -522,15 +596,16 @@ h1, h2, h3, h4, h5 {
     height: 1000px;
   }
 
+  .health-background {
+    margin: 5% auto;
+    display: block;
+  }
+
   #FAQs {
     height: 700px;
   }
 
   #About-us {
     height: 1150px;
-  }
-
-  .health-background {
-    margin-top: 5%;
   }
 }
